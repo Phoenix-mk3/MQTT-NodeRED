@@ -2,7 +2,7 @@
     {
         "id": "3f54427712bf2b84",
         "type": "tab",
-        "label": "MQTT Mottak",
+        "label": "MQTT Levering og mottak",
         "disabled": false,
         "info": "her skal sensordataen komme inn",
         "env": []
@@ -10,31 +10,7 @@
     {
         "id": "59eb797b865d4933",
         "type": "tab",
-        "label": "Sende alarm info til ESP via MQTT",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
-        "id": "6f9f76555ff487cd",
-        "type": "tab",
-        "label": "oppdatere alarm",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
-        "id": "abbd318340cb8442",
-        "type": "tab",
-        "label": "Varslinger",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
-        "id": "b8215345e012fefe",
-        "type": "tab",
-        "label": "TestMQTT",
+        "label": "HTTP",
         "disabled": false,
         "info": "",
         "env": []
@@ -79,6 +55,20 @@
         "sessionExpiry": ""
     },
     {
+        "id": "01acbed2d3ecc2db",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "",
+        "servername": "",
+        "verifyservercert": false,
+        "alpnprotocol": ""
+    },
+    {
         "id": "8fa2ff0ef918eec0",
         "type": "http request",
         "z": "3f54427712bf2b84",
@@ -87,7 +77,7 @@
         "ret": "txt",
         "paytoqs": "ignore",
         "url": "",
-        "tls": "",
+        "tls": "01acbed2d3ecc2db",
         "persist": false,
         "proxy": "",
         "insecureHTTPParser": false,
@@ -117,7 +107,8 @@
         "y": 320,
         "wires": [
             [
-                "62b0292813a4c26a"
+                "62b0292813a4c26a",
+                "74d485d3a7222690"
             ]
         ]
     },
@@ -213,7 +204,7 @@
         "z": "3f54427712bf2b84",
         "name": "Må configureres til api.",
         "info": "skal være post\n",
-        "x": 900,
+        "x": 940,
         "y": 320,
         "wires": []
     },
@@ -246,8 +237,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 170,
-        "y": 620,
+        "x": 130,
+        "y": 540,
         "wires": [
             [
                 "6d8f6e56cdd454b2",
@@ -267,15 +258,15 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 420,
-        "y": 540,
+        "x": 400,
+        "y": 460,
         "wires": []
     },
     {
         "id": "ad33babc78b0520b",
         "type": "function",
         "z": "3f54427712bf2b84",
-        "name": "function 4",
+        "name": "Function 1",
         "func": "// Hent meldingen (f.eks. \"16:20\")\nvar alarmTime = msg.payload;\n\n// Splitter \"hh:mm\" til timer og minutter\nvar parts = alarmTime.split(\":\");\nvar hours = parseInt(parts[0]);\nvar minutes = parseInt(parts[1]);\n\n// Konverter til millisekunder fra midnatt\nvar alarmMillis = (hours * 3600000) + (minutes * 60000);\n\n// Oppdater meldingen med den nye verdien i millisekunder\nmsg.payload = alarmMillis;\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
@@ -283,8 +274,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 420,
-        "y": 620,
+        "x": 390,
+        "y": 540,
         "wires": [
             [
                 "d6f14a56b7188a57",
@@ -306,8 +297,8 @@
         "correl": "",
         "expiry": "",
         "broker": "ffaf32d3b2905d76",
-        "x": 670,
-        "y": 620,
+        "x": 690,
+        "y": 540,
         "wires": []
     },
     {
@@ -323,7 +314,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 640,
-        "y": 540,
+        "y": 460,
         "wires": []
     },
     {
@@ -332,18 +323,130 @@
         "z": "3f54427712bf2b84",
         "name": "<- fra app til esp32 alarmtid.",
         "info": "",
-        "x": 940,
-        "y": 620,
+        "x": 1000,
+        "y": 540,
         "wires": []
     },
     {
-        "id": "4915fb4ea4dcac73",
+        "id": "3fd086636fa339c9",
         "type": "comment",
-        "z": "59eb797b865d4933",
-        "name": "http request for å hente alarm info",
+        "z": "3f54427712bf2b84",
+        "name": "hente data fra Database til App.",
+        "info": "MQTT signal fra app skal trigge en request\ntil serveren om å gi oss data fra databasen",
+        "x": 950,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "479cc5ee8e884e16",
+        "type": "mqtt in",
+        "z": "3f54427712bf2b84",
+        "name": "",
+        "topic": "app/alarmoff",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "ffaf32d3b2905d76",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 680,
+        "wires": [
+            [
+                "039bfd2302eba2be"
+            ]
+        ]
+    },
+    {
+        "id": "039bfd2302eba2be",
+        "type": "mqtt out",
+        "z": "3f54427712bf2b84",
+        "name": "",
+        "topic": "esp32/alarmoff",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "ffaf32d3b2905d76",
+        "x": 340,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "7fc315f777b16e33",
+        "type": "comment",
+        "z": "3f54427712bf2b84",
+        "name": "Sku av alarm",
         "info": "",
-        "x": 250,
-        "y": 60,
+        "x": 550,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "83270f55aca45e33",
+        "type": "mqtt in",
+        "z": "3f54427712bf2b84",
+        "name": "",
+        "topic": "app/HistoryRequest",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "ffaf32d3b2905d76",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 820,
+        "wires": [
+            [
+                "9105a25878854182"
+            ]
+        ]
+    },
+    {
+        "id": "9105a25878854182",
+        "type": "http request",
+        "z": "3f54427712bf2b84",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 410,
+        "y": 820,
+        "wires": [
+            [
+                "20854932c182343b"
+            ]
+        ]
+    },
+    {
+        "id": "20854932c182343b",
+        "type": "mqtt out",
+        "z": "3f54427712bf2b84",
+        "name": "",
+        "topic": "app/history",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "ffaf32d3b2905d76",
+        "x": 710,
+        "y": 820,
         "wires": []
     },
     {
@@ -361,7 +464,7 @@
         "senderr": false,
         "headers": [],
         "x": 210,
-        "y": 220,
+        "y": 140,
         "wires": [
             [
                 "65c8a71b82af6a7c"
@@ -372,10 +475,10 @@
         "id": "53b72e4b3e593fd0",
         "type": "comment",
         "z": "59eb797b865d4933",
-        "name": "Hente alarmtidspunkt fra databasen (via .NET-serveren)",
+        "name": "Hente data fra databasen ",
         "info": "Node-RED vil bruke en HTTP Request-node til å hente \nalarmtidspunktet fra en .NET-server som har lagret \ntidspunktet i en database.\nNår tidspunktet er hentet, \nkan det sendes videre til ESP32 via MQTT.",
-        "x": 240,
-        "y": 160,
+        "x": 230,
+        "y": 80,
         "wires": []
     },
     {
@@ -387,7 +490,7 @@
         "action": "",
         "pretty": false,
         "x": 510,
-        "y": 220,
+        "y": 140,
         "wires": [
             [
                 "b47415d1e57e8831"
@@ -400,8 +503,8 @@
         "z": "59eb797b865d4933",
         "name": "omgjøre til json",
         "info": "",
-        "x": 560,
-        "y": 160,
+        "x": 520,
+        "y": 80,
         "wires": []
     },
     {
@@ -419,222 +522,8 @@
         "expiry": "",
         "broker": "ffaf32d3b2905d76",
         "x": 790,
-        "y": 220,
+        "y": 140,
         "wires": []
-    },
-    {
-        "id": "396e7b71d0dbfc28",
-        "type": "http in",
-        "z": "59eb797b865d4933",
-        "name": "",
-        "url": "",
-        "method": "get",
-        "upload": false,
-        "x": 190,
-        "y": 360,
-        "wires": [
-            [
-                "76829ac0eefe6b80"
-            ]
-        ]
-    },
-    {
-        "id": "76829ac0eefe6b80",
-        "type": "mqtt out",
-        "z": "59eb797b865d4933",
-        "name": "",
-        "topic": "esp32/alarmoff",
-        "qos": "",
-        "retain": "",
-        "respTopic": "",
-        "contentType": "",
-        "userProps": "",
-        "correl": "",
-        "expiry": "",
-        "broker": "ffaf32d3b2905d76",
-        "x": 500,
-        "y": 360,
-        "wires": []
-    },
-    {
-        "id": "5809644550fed4db",
-        "type": "comment",
-        "z": "59eb797b865d4933",
-        "name": "signal for å skru av alarm. trenger config",
-        "info": "",
-        "x": 190,
-        "y": 300,
-        "wires": []
-    },
-    {
-        "id": "f224ab6a863ead7a",
-        "type": "comment",
-        "z": "6f9f76555ff487cd",
-        "name": "Forslag til oppdatering av alarm",
-        "info": "",
-        "x": 490,
-        "y": 80,
-        "wires": []
-    },
-    {
-        "id": "39bee39b8ead4dbd",
-        "type": "comment",
-        "z": "6f9f76555ff487cd",
-        "name": "HTTP Request-node for å hente alarmtidspunkt",
-        "info": "",
-        "x": 200,
-        "y": 160,
-        "wires": []
-    },
-    {
-        "id": "ecf6079d8091adb4",
-        "type": "comment",
-        "z": "6f9f76555ff487cd",
-        "name": "Dataene behandles i en Function-node for å formateres riktig.",
-        "info": "",
-        "x": 600,
-        "y": 160,
-        "wires": []
-    },
-    {
-        "id": "7e0538cf473e2932",
-        "type": "comment",
-        "z": "6f9f76555ff487cd",
-        "name": "Alarmtidspunktet sendes til ESP32 via en MQTT Out-node.",
-        "info": "",
-        "x": 1030,
-        "y": 160,
-        "wires": []
-    },
-    {
-        "id": "5dc5aede3d03280e",
-        "type": "function",
-        "z": "6f9f76555ff487cd",
-        "name": "function 2",
-        "func": "let alarmTime = msg.payload.alarmTime;  \n// Forutsatt at 'alarmTime' er en del av JSON-dataene\nmsg.payload = {\n    \"time\": alarmTime\n};\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 400,
-        "y": 260,
-        "wires": [
-            [
-                "86354adfdfb34854",
-                "72747b6e9775f56b"
-            ]
-        ]
-    },
-    {
-        "id": "86354adfdfb34854",
-        "type": "debug",
-        "z": "6f9f76555ff487cd",
-        "name": "debug 5",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 680,
-        "y": 360,
-        "wires": []
-    },
-    {
-        "id": "72747b6e9775f56b",
-        "type": "mqtt out",
-        "z": "6f9f76555ff487cd",
-        "name": "",
-        "topic": "esp32/alarmtime",
-        "qos": "",
-        "retain": "",
-        "respTopic": "",
-        "contentType": "",
-        "userProps": "",
-        "correl": "",
-        "expiry": "",
-        "broker": "ffaf32d3b2905d76",
-        "x": 710,
-        "y": 260,
-        "wires": []
-    },
-    {
-        "id": "5b5cb41cddc24c06",
-        "type": "mqtt in",
-        "z": "6f9f76555ff487cd",
-        "name": "",
-        "topic": "",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 170,
-        "y": 260,
-        "wires": [
-            [
-                "5dc5aede3d03280e"
-            ]
-        ]
-    },
-    {
-        "id": "bf230d859a76c588",
-        "type": "mqtt in",
-        "z": "abbd318340cb8442",
-        "name": "",
-        "topic": "",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "ffaf32d3b2905d76",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 1,
-        "x": 190,
-        "y": 440,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "96c96da98d3fd888",
-        "type": "switch",
-        "z": "abbd318340cb8442",
-        "name": "",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 3,
-        "x": 410,
-        "y": 440,
-        "wires": [
-            [],
-            [],
-            []
-        ]
     },
     {
         "id": "1df2aa4f5cc16441",
