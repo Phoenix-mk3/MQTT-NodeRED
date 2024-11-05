@@ -61,11 +61,102 @@
         "cert": "",
         "key": "",
         "ca": "",
+        "certname": "broker.crt",
+        "keyname": "broker.key",
+        "caname": "ca.crt",
+        "servername": "",
+        "verifyservercert": false,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "58ffeb75cb860e3d",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.10.229",
+        "port": "8883",
+        "tls": "88c2522ba4061f5b",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "126bcb5c88f1a2cb",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
         "certname": "",
         "keyname": "",
         "caname": "",
         "servername": "",
-        "verifyservercert": false,
+        "verifyservercert": true,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "d1fb5a1c9120777e",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "88c2522ba4061f5b",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "broker.crt",
+        "keyname": "broker.key",
+        "caname": "ca.crt",
+        "servername": "",
+        "verifyservercert": true,
         "alpnprotocol": ""
     },
     {
@@ -98,7 +189,7 @@
         "topic": "sensor/data",
         "qos": "2",
         "datatype": "auto-detect",
-        "broker": "ffaf32d3b2905d76",
+        "broker": "58ffeb75cb860e3d",
         "nl": false,
         "rap": true,
         "rh": 0,
@@ -122,7 +213,7 @@
                 "p": "payload"
             }
         ],
-        "repeat": "1",
+        "repeat": "",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
@@ -187,7 +278,7 @@
         "type": "debug",
         "z": "3f54427712bf2b84",
         "name": "debug 3",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -202,7 +293,7 @@
         "id": "a46d6f9f1a3af3e3",
         "type": "comment",
         "z": "3f54427712bf2b84",
-        "name": "Må configureres til api.",
+        "name": "Sende data til Database",
         "info": "skal være post\n",
         "x": 940,
         "y": 320,
@@ -238,7 +329,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 130,
-        "y": 540,
+        "y": 520,
         "wires": [
             [
                 "6d8f6e56cdd454b2",
@@ -259,7 +350,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 400,
-        "y": 460,
+        "y": 440,
         "wires": []
     },
     {
@@ -275,7 +366,7 @@
         "finalize": "",
         "libs": [],
         "x": 390,
-        "y": 540,
+        "y": 520,
         "wires": [
             [
                 "d6f14a56b7188a57",
@@ -298,7 +389,7 @@
         "expiry": "",
         "broker": "ffaf32d3b2905d76",
         "x": 690,
-        "y": 540,
+        "y": 520,
         "wires": []
     },
     {
@@ -314,7 +405,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 640,
-        "y": 460,
+        "y": 440,
         "wires": []
     },
     {
@@ -324,7 +415,7 @@
         "name": "<- fra app til esp32 alarmtid.",
         "info": "",
         "x": 1000,
-        "y": 540,
+        "y": 520,
         "wires": []
     },
     {
@@ -334,7 +425,7 @@
         "name": "hente data fra Database til App.",
         "info": "MQTT signal fra app skal trigge en request\ntil serveren om å gi oss data fra databasen",
         "x": 950,
-        "y": 820,
+        "y": 880,
         "wires": []
     },
     {
@@ -351,10 +442,11 @@
         "rh": 0,
         "inputs": 0,
         "x": 130,
-        "y": 680,
+        "y": 700,
         "wires": [
             [
-                "039bfd2302eba2be"
+                "039bfd2302eba2be",
+                "c96bfa6a6ee809a1"
             ]
         ]
     },
@@ -372,8 +464,8 @@
         "correl": "",
         "expiry": "",
         "broker": "ffaf32d3b2905d76",
-        "x": 340,
-        "y": 680,
+        "x": 400,
+        "y": 700,
         "wires": []
     },
     {
@@ -382,8 +474,8 @@
         "z": "3f54427712bf2b84",
         "name": "Sku av alarm",
         "info": "",
-        "x": 550,
-        "y": 680,
+        "x": 610,
+        "y": 700,
         "wires": []
     },
     {
@@ -400,10 +492,11 @@
         "rh": 0,
         "inputs": 0,
         "x": 150,
-        "y": 820,
+        "y": 880,
         "wires": [
             [
-                "9105a25878854182"
+                "9105a25878854182",
+                "89998a9b954087bd"
             ]
         ]
     },
@@ -424,10 +517,11 @@
         "senderr": false,
         "headers": [],
         "x": 410,
-        "y": 820,
+        "y": 880,
         "wires": [
             [
-                "20854932c182343b"
+                "20854932c182343b",
+                "1b953dab09c11e9b"
             ]
         ]
     },
@@ -446,7 +540,135 @@
         "expiry": "",
         "broker": "ffaf32d3b2905d76",
         "x": 710,
-        "y": 820,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "89998a9b954087bd",
+        "type": "debug",
+        "z": "3f54427712bf2b84",
+        "name": "debug 10",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 420,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "1b953dab09c11e9b",
+        "type": "debug",
+        "z": "3f54427712bf2b84",
+        "name": "debug 11",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "c96bfa6a6ee809a1",
+        "type": "debug",
+        "z": "3f54427712bf2b84",
+        "name": "debug 12",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 380,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "eb42c39fd39cdce3",
+        "type": "inject",
+        "z": "3f54427712bf2b84",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{   \"temperature\": 22.5,   \"humidity\": 55 }",
+        "payloadType": "json",
+        "x": 130,
+        "y": 1120,
+        "wires": [
+            [
+                "a6f04e8558fd733e"
+            ]
+        ]
+    },
+    {
+        "id": "a6f04e8558fd733e",
+        "type": "mqtt out",
+        "z": "3f54427712bf2b84",
+        "name": "",
+        "topic": "test/sensor",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "58ffeb75cb860e3d",
+        "x": 350,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "8be8a13d35dde7ce",
+        "type": "mqtt in",
+        "z": "3f54427712bf2b84",
+        "name": "",
+        "topic": "test/sensor",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "58ffeb75cb860e3d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 1220,
+        "wires": [
+            [
+                "ebb1730a8cfe7eff"
+            ]
+        ]
+    },
+    {
+        "id": "ebb1730a8cfe7eff",
+        "type": "debug",
+        "z": "3f54427712bf2b84",
+        "name": "debug 13",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 320,
+        "y": 1220,
         "wires": []
     },
     {
