@@ -1,14 +1,6 @@
 [
     {
-        "id": "02fe833f20764a91",
-        "type": "tab",
-        "label": "Flow 1",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
-        "id": "b2077c04dd8247ed",
+        "id": "7c1fe608abafdee9",
         "type": "tab",
         "label": "MQTT Levering og mottak",
         "disabled": false,
@@ -16,7 +8,7 @@
         "env": []
     },
     {
-        "id": "4849650de0ff6e7f",
+        "id": "0fa81af8f1d68229",
         "type": "tab",
         "label": "API Requests og auth",
         "disabled": false,
@@ -24,7 +16,7 @@
         "env": []
     },
     {
-        "id": "48444936cd495fbf",
+        "id": "e421cbd625b1e3bc",
         "type": "tab",
         "label": "Hub Auth",
         "disabled": false,
@@ -63,13 +55,118 @@
         "sessionExpiry": ""
     },
     {
-        "id": "87f65426d199218e",
+        "id": "01acbed2d3ecc2db",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "broker.crt",
+        "keyname": "broker.key",
+        "caname": "ca.crt",
+        "servername": "",
+        "verifyservercert": false,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "58ffeb75cb860e3d",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.10.229",
+        "port": "8883",
+        "tls": "88c2522ba4061f5b",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "126bcb5c88f1a2cb",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "",
+        "servername": "",
+        "verifyservercert": true,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "d1fb5a1c9120777e",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "88c2522ba4061f5b",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "broker.crt",
+        "keyname": "broker.key",
+        "caname": "ca.crt",
+        "servername": "",
+        "verifyservercert": true,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "7f35093cb514a4b6",
         "type": "global-config",
         "name": "global-config",
         "env": []
     },
     {
-        "id": "97ca6781ab28eb2e",
+        "id": "3f2e596f37af125b",
         "type": "tls-config",
         "name": "Insecure TLS",
         "cert": "",
@@ -83,7 +180,7 @@
         "alpnprotocol": ""
     },
     {
-        "id": "b063e4d4be8ace27",
+        "id": "3eca19b059d726ef",
         "type": "tls-config",
         "name": "",
         "cert": "",
@@ -97,12 +194,12 @@
         "alpnprotocol": ""
     },
     {
-        "id": "142ee3a212785e7f",
+        "id": "320b2ebfd851f445",
         "type": "mqtt-broker",
         "name": "",
         "broker": "192.168.10.229",
         "port": "8883",
-        "tls": "6a3aa8846e16e9d8",
+        "tls": "50550e8fe1b3417c",
         "clientid": "",
         "autoConnect": true,
         "usetls": true,
@@ -129,7 +226,7 @@
         "sessionExpiry": ""
     },
     {
-        "id": "15510c18bdefd9d6",
+        "id": "bc9e7c8d5247e4d8",
         "type": "tls-config",
         "name": "",
         "cert": "",
@@ -143,7 +240,7 @@
         "alpnprotocol": ""
     },
     {
-        "id": "918c9be8a863dfd5",
+        "id": "0ab6c42cf5e0f5b1",
         "type": "mqtt-broker",
         "name": "",
         "broker": "",
@@ -174,7 +271,7 @@
         "sessionExpiry": ""
     },
     {
-        "id": "6a3aa8846e16e9d8",
+        "id": "50550e8fe1b3417c",
         "type": "tls-config",
         "name": "",
         "cert": "",
@@ -188,7 +285,7 @@
         "alpnprotocol": ""
     },
     {
-        "id": "2a8fd11a12707e39",
+        "id": "7b17fa89499a2743",
         "type": "tls-config",
         "name": "",
         "cert": "",
@@ -202,12 +299,12 @@
         "alpnprotocol": ""
     },
     {
-        "id": "7f019286456d685d",
+        "id": "775352b8fdecf86c",
         "type": "mqtt-broker",
         "name": "",
         "broker": "192.168.10.229",
         "port": "8883",
-        "tls": "62bb5bdf992414f7",
+        "tls": "bb035a77b49cf28c",
         "clientid": "",
         "autoConnect": true,
         "usetls": true,
@@ -234,7 +331,7 @@
         "sessionExpiry": ""
     },
     {
-        "id": "c009e66b5cc569a5",
+        "id": "361272cb3d695d6a",
         "type": "tls-config",
         "name": "",
         "cert": "",
@@ -248,7 +345,7 @@
         "alpnprotocol": ""
     },
     {
-        "id": "ef754c2251b5a630",
+        "id": "a1a84e89b69a0540",
         "type": "mqtt-broker",
         "name": "",
         "broker": "",
@@ -279,7 +376,7 @@
         "sessionExpiry": ""
     },
     {
-        "id": "62bb5bdf992414f7",
+        "id": "bb035a77b49cf28c",
         "type": "tls-config",
         "name": "",
         "cert": "",
@@ -293,7 +390,7 @@
         "alpnprotocol": ""
     },
     {
-        "id": "29cf605083afc9f5",
+        "id": "3d52208e47fbe976",
         "type": "tls-config",
         "name": "test1",
         "cert": "",
@@ -307,9 +404,9 @@
         "alpnprotocol": ""
     },
     {
-        "id": "12018b57370b812b",
+        "id": "cd37e6f4df702aa1",
         "type": "inject",
-        "z": "b2077c04dd8247ed",
+        "z": "7c1fe608abafdee9",
         "name": "",
         "props": [
             {
@@ -327,14 +424,14 @@
         "y": 60,
         "wires": [
             [
-                "51344fe6d9f9d1ec"
+                "8e3069b7ff9ab918"
             ]
         ]
     },
     {
-        "id": "51344fe6d9f9d1ec",
+        "id": "8e3069b7ff9ab918",
         "type": "mqtt out",
-        "z": "b2077c04dd8247ed",
+        "z": "7c1fe608abafdee9",
         "name": "",
         "topic": "sensor/data",
         "qos": "",
@@ -350,9 +447,9 @@
         "wires": []
     },
     {
-        "id": "4a78938ee17e1670",
+        "id": "d8a5f3fc9e31ddcb",
         "type": "comment",
-        "z": "b2077c04dd8247ed",
+        "z": "7c1fe608abafdee9",
         "name": "<- for testing ",
         "info": "",
         "x": 570,
@@ -360,9 +457,9 @@
         "wires": []
     },
     {
-        "id": "ea8b140e6e8056ea",
+        "id": "17c25f1a614b3b50",
         "type": "mqtt in",
-        "z": "b2077c04dd8247ed",
+        "z": "7c1fe608abafdee9",
         "name": "",
         "topic": "app/alarmtime",
         "qos": "2",
@@ -376,15 +473,15 @@
         "y": 320,
         "wires": [
             [
-                "6b5d5ade01211dbc",
-                "054ae3bce2512aae"
+                "3192ea3da0091a97",
+                "ee128c7f59155504"
             ]
         ]
     },
     {
-        "id": "6b5d5ade01211dbc",
+        "id": "3192ea3da0091a97",
         "type": "debug",
-        "z": "b2077c04dd8247ed",
+        "z": "7c1fe608abafdee9",
         "name": "debug 8",
         "active": true,
         "tosidebar": true,
@@ -398,9 +495,9 @@
         "wires": []
     },
     {
-        "id": "054ae3bce2512aae",
+        "id": "ee128c7f59155504",
         "type": "function",
-        "z": "b2077c04dd8247ed",
+        "z": "7c1fe608abafdee9",
         "name": "Function 1",
         "func": "// Hent meldingen (f.eks. \"16:20\")\nvar alarmTime = msg.payload;\n\n// Splitter \"hh:mm\" til timer og minutter\nvar parts = alarmTime.split(\":\");\nvar hours = parseInt(parts[0]);\nvar minutes = parseInt(parts[1]);\n\n// Konverter til millisekunder fra midnatt\nvar alarmMillis = (hours * 3600000) + (minutes * 60000);\n\n// Oppdater meldingen med den nye verdien i millisekunder\nmsg.payload = alarmMillis;\n\nreturn msg;",
         "outputs": 1,
@@ -413,15 +510,15 @@
         "y": 320,
         "wires": [
             [
-                "af159673f5cc31e8",
-                "996f650d0e86b27c"
+                "834e4f97d29566de",
+                "528e8cb550b80102"
             ]
         ]
     },
     {
-        "id": "af159673f5cc31e8",
+        "id": "834e4f97d29566de",
         "type": "mqtt out",
-        "z": "b2077c04dd8247ed",
+        "z": "7c1fe608abafdee9",
         "name": "",
         "topic": "esp32/alarmtime",
         "qos": "",
@@ -437,9 +534,9 @@
         "wires": []
     },
     {
-        "id": "996f650d0e86b27c",
+        "id": "528e8cb550b80102",
         "type": "debug",
-        "z": "b2077c04dd8247ed",
+        "z": "7c1fe608abafdee9",
         "name": "debug 9",
         "active": true,
         "tosidebar": true,
@@ -453,19 +550,19 @@
         "wires": []
     },
     {
-        "id": "28b6a2297c938d75",
+        "id": "992ab7dd1968942b",
         "type": "comment",
-        "z": "b2077c04dd8247ed",
+        "z": "7c1fe608abafdee9",
         "name": "<- fra app til esp32 alarmtid.",
         "info": "",
-        "x": 980,
+        "x": 920,
         "y": 320,
         "wires": []
     },
     {
-        "id": "1b2176e9259a81ec",
+        "id": "800c4411e5e8b951",
         "type": "mqtt in",
-        "z": "b2077c04dd8247ed",
+        "z": "7c1fe608abafdee9",
         "name": "",
         "topic": "app/alarmoff",
         "qos": "2",
@@ -479,15 +576,15 @@
         "y": 520,
         "wires": [
             [
-                "0f83da2de529fe56",
-                "dff65d88a9bdc575"
+                "11d4c49917e63a22",
+                "38bd5c836d2d6865"
             ]
         ]
     },
     {
-        "id": "0f83da2de529fe56",
+        "id": "11d4c49917e63a22",
         "type": "mqtt out",
-        "z": "b2077c04dd8247ed",
+        "z": "7c1fe608abafdee9",
         "name": "",
         "topic": "esp32/alarmoff",
         "qos": "",
@@ -503,19 +600,19 @@
         "wires": []
     },
     {
-        "id": "fc5b38e9722deb0f",
+        "id": "6590638af10da403",
         "type": "comment",
-        "z": "b2077c04dd8247ed",
+        "z": "7c1fe608abafdee9",
         "name": "Sku av alarm",
         "info": "",
-        "x": 570,
+        "x": 590,
         "y": 520,
         "wires": []
     },
     {
-        "id": "dff65d88a9bdc575",
+        "id": "38bd5c836d2d6865",
         "type": "debug",
-        "z": "b2077c04dd8247ed",
+        "z": "7c1fe608abafdee9",
         "name": "debug 12",
         "active": true,
         "tosidebar": true,
@@ -529,9 +626,9 @@
         "wires": []
     },
     {
-        "id": "2b684b0d6c62b625",
+        "id": "6c01f15fb8067729",
         "type": "inject",
-        "z": "b2077c04dd8247ed",
+        "z": "7c1fe608abafdee9",
         "name": "",
         "props": [
             {
@@ -549,14 +646,14 @@
         "y": 620,
         "wires": [
             [
-                "e6fb21be8e0303f0"
+                "13db172b952d41b4"
             ]
         ]
     },
     {
-        "id": "e6fb21be8e0303f0",
+        "id": "13db172b952d41b4",
         "type": "mqtt out",
-        "z": "b2077c04dd8247ed",
+        "z": "7c1fe608abafdee9",
         "name": "",
         "topic": "test/sensor",
         "qos": "",
@@ -566,20 +663,20 @@
         "userProps": "",
         "correl": "",
         "expiry": "",
-        "broker": "7f019286456d685d",
+        "broker": "775352b8fdecf86c",
         "x": 330,
         "y": 620,
         "wires": []
     },
     {
-        "id": "0a1aa3b52ed0dabc",
+        "id": "a9c4755868354a54",
         "type": "mqtt in",
-        "z": "b2077c04dd8247ed",
+        "z": "7c1fe608abafdee9",
         "name": "",
         "topic": "test/sensor",
         "qos": "2",
         "datatype": "auto-detect",
-        "broker": "7f019286456d685d",
+        "broker": "775352b8fdecf86c",
         "nl": false,
         "rap": true,
         "rh": 0,
@@ -588,14 +685,14 @@
         "y": 720,
         "wires": [
             [
-                "cde53149cb08c990"
+                "d84c04eb6fd1d5be"
             ]
         ]
     },
     {
-        "id": "cde53149cb08c990",
+        "id": "d84c04eb6fd1d5be",
         "type": "debug",
-        "z": "b2077c04dd8247ed",
+        "z": "7c1fe608abafdee9",
         "name": "debug 13",
         "active": true,
         "tosidebar": true,
@@ -609,9 +706,9 @@
         "wires": []
     },
     {
-        "id": "8c2d70f62883a815",
+        "id": "79dd9164157e2800",
         "type": "function",
-        "z": "4849650de0ff6e7f",
+        "z": "0fa81af8f1d68229",
         "name": "function 4",
         "func": "var requestData = {\n    \"UserId\": msg.payload.UserId\n};\nmsg.payload = requestData;\nreturn msg;",
         "outputs": 1,
@@ -624,21 +721,20 @@
         "y": 300,
         "wires": [
             [
-                "0a7d031f22638394",
-                "30adbe9a7e3f6a1e"
+                "ab4370ab38624338"
             ]
         ]
     },
     {
-        "id": "0a7d031f22638394",
+        "id": "ab4370ab38624338",
         "type": "http request",
-        "z": "4849650de0ff6e7f",
+        "z": "0fa81af8f1d68229",
         "name": "",
         "method": "POST",
         "ret": "txt",
         "paytoqs": "body",
         "url": "https://localhost:7142/api/Authentication/hub-user-auth",
-        "tls": "29cf605083afc9f5",
+        "tls": "3d52208e47fbe976",
         "persist": false,
         "proxy": "",
         "insecureHTTPParser": false,
@@ -649,14 +745,14 @@
         "y": 300,
         "wires": [
             [
-                "41a7687079e63fd0"
+                "bb4c5944d690403a"
             ]
         ]
     },
     {
-        "id": "41a7687079e63fd0",
+        "id": "bb4c5944d690403a",
         "type": "switch",
-        "z": "4849650de0ff6e7f",
+        "z": "0fa81af8f1d68229",
         "name": "API Response check",
         "property": "statusCode",
         "propertyType": "msg",
@@ -689,33 +785,33 @@
         "y": 300,
         "wires": [
             [
-                "24a04d26295cb563"
+                "ab4d67be80f44059"
             ],
             [
-                "e8f579532870e99d"
+                "a7fd9fbc46043de7"
             ],
             [
-                "e8f579532870e99d"
+                "a7fd9fbc46043de7"
             ],
             [
-                "e8f579532870e99d"
+                "a7fd9fbc46043de7"
             ]
         ]
     },
     {
-        "id": "efb4e4a259b25130",
+        "id": "cc322a4e977cfd54",
         "type": "comment",
-        "z": "4849650de0ff6e7f",
+        "z": "0fa81af8f1d68229",
         "name": "Først sende forespørsel fra app.",
         "info": "",
         "x": 150,
-        "y": 220,
+        "y": 200,
         "wires": []
     },
     {
-        "id": "447ededfd90e6524",
+        "id": "842566436d7c6e5b",
         "type": "mqtt in",
-        "z": "4849650de0ff6e7f",
+        "z": "0fa81af8f1d68229",
         "name": "",
         "topic": "App/auth",
         "qos": "2",
@@ -729,25 +825,25 @@
         "y": 300,
         "wires": [
             [
-                "8c2d70f62883a815",
-                "d41f1cd97ef7b9ab"
+                "79dd9164157e2800",
+                "7159b429c9803e3f"
             ]
         ]
     },
     {
-        "id": "53366957dbf45c61",
+        "id": "2893d292171679a2",
         "type": "comment",
-        "z": "4849650de0ff6e7f",
+        "z": "0fa81af8f1d68229",
         "name": "setter payload tom og sender videre til api",
         "info": "",
         "x": 320,
-        "y": 260,
+        "y": 240,
         "wires": []
     },
     {
-        "id": "41e9003053f8da50",
+        "id": "3905dbfc964d338f",
         "type": "comment",
-        "z": "4849650de0ff6e7f",
+        "z": "0fa81af8f1d68229",
         "name": "Sende Auth forespørsel til APIet. i formen Post for å sende data for authentisering",
         "info": "",
         "x": 580,
@@ -755,9 +851,9 @@
         "wires": []
     },
     {
-        "id": "fad25a11a6b37096",
+        "id": "0483a366a78e9457",
         "type": "mqtt out",
-        "z": "4849650de0ff6e7f",
+        "z": "0fa81af8f1d68229",
         "name": "",
         "topic": "app/authresponds",
         "qos": "",
@@ -768,14 +864,14 @@
         "correl": "",
         "expiry": "",
         "broker": "ffaf32d3b2905d76",
-        "x": 1390,
-        "y": 380,
+        "x": 1450,
+        "y": 360,
         "wires": []
     },
     {
-        "id": "a59188b435c2f88b",
+        "id": "55d1cdfc97226412",
         "type": "comment",
-        "z": "4849650de0ff6e7f",
+        "z": "0fa81af8f1d68229",
         "name": "Switch for å catche om den feiler eller ikke:",
         "info": "",
         "x": 880,
@@ -783,9 +879,9 @@
         "wires": []
     },
     {
-        "id": "ad470cf18d4bb053",
+        "id": "c88010c78d3a90ac",
         "type": "comment",
-        "z": "4849650de0ff6e7f",
+        "z": "0fa81af8f1d68229",
         "name": "ved feil sende responds.",
         "info": "",
         "x": 1130,
@@ -793,9 +889,9 @@
         "wires": []
     },
     {
-        "id": "563ebc1566277ddd",
+        "id": "bd4a9eeba1014583",
         "type": "mqtt out",
-        "z": "4849650de0ff6e7f",
+        "z": "0fa81af8f1d68229",
         "name": "",
         "topic": "app/authresponds",
         "qos": "",
@@ -806,50 +902,23 @@
         "correl": "",
         "expiry": "",
         "broker": "ffaf32d3b2905d76",
-        "x": 1710,
-        "y": 260,
+        "x": 1670,
+        "y": 280,
         "wires": []
     },
     {
-        "id": "d41f1cd97ef7b9ab",
-        "type": "debug",
-        "z": "4849650de0ff6e7f",
-        "name": "debug 14",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 320,
-        "y": 360,
-        "wires": []
-    },
-    {
-        "id": "30adbe9a7e3f6a1e",
-        "type": "debug",
-        "z": "4849650de0ff6e7f",
-        "name": "debug 15",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 520,
-        "y": 360,
-        "wires": []
-    },
-    {
-        "id": "5db250042de0499b",
+        "id": "ed40d82030134397",
         "type": "inject",
-        "z": "4849650de0ff6e7f",
+        "z": "0fa81af8f1d68229",
         "name": "Connect success!",
         "props": [
             {
                 "p": "payload"
+            },
+            {
+                "p": "statusCode",
+                "v": "200",
+                "vt": "num"
             }
         ],
         "repeat": "",
@@ -863,14 +932,14 @@
         "y": 240,
         "wires": [
             [
-                "41a7687079e63fd0"
+                "bb4c5944d690403a"
             ]
         ]
     },
     {
-        "id": "6b335c983937010a",
+        "id": "8c6535f6c3ddb528",
         "type": "inject",
-        "z": "4849650de0ff6e7f",
+        "z": "0fa81af8f1d68229",
         "name": "Connection failed",
         "props": [
             {
@@ -888,14 +957,14 @@
         "y": 420,
         "wires": [
             [
-                "41a7687079e63fd0"
+                "bb4c5944d690403a"
             ]
         ]
     },
     {
-        "id": "e8f579532870e99d",
+        "id": "a7fd9fbc46043de7",
         "type": "function",
-        "z": "4849650de0ff6e7f",
+        "z": "0fa81af8f1d68229",
         "name": "function 5",
         "func": "msg.payload = \"API failed to connect\";\nreturn msg;",
         "outputs": 1,
@@ -904,18 +973,18 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1140,
-        "y": 400,
+        "x": 1120,
+        "y": 320,
         "wires": [
             [
-                "fad25a11a6b37096"
+                "0483a366a78e9457"
             ]
         ]
     },
     {
-        "id": "24a04d26295cb563",
+        "id": "ab4d67be80f44059",
         "type": "function",
-        "z": "4849650de0ff6e7f",
+        "z": "0fa81af8f1d68229",
         "name": "lagre og sende userid",
         "func": "// Hent ut UserId og TemporaryAuthToken fra API-responsen\nvar userId = msg.payload.UserId; // Hent UserId fra responsen\nvar tempAuthToken = msg.payload.TemporaryAuthToken; // Hent TemporaryAuthToken fra responsen\n\n// Lagre UserId og TemporaryAuthToken i flow-kontekst for videre bruk\nflow.set(\"userId\", userId);\nflow.set(\"tempAuthToken\", tempAuthToken);\n\n// Skriv ut for å debugge (valgfritt)\nnode.warn(\"UserId lagret: \" + userId);\nnode.warn(\"TemporaryAuthToken lagret: \" + tempAuthToken);\n\nreturn msg;",
         "outputs": 1,
@@ -924,19 +993,20 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1140,
-        "y": 300,
+        "x": 1180,
+        "y": 280,
         "wires": [
             [
-                "fad25a11a6b37096",
-                "27f342e748a72984"
+                "0483a366a78e9457",
+                "0781beb677a3d325",
+                "bd4a9eeba1014583"
             ]
         ]
     },
     {
-        "id": "34170c0153b4169e",
+        "id": "589b6658b3ac95fb",
         "type": "mqtt in",
-        "z": "4849650de0ff6e7f",
+        "z": "0fa81af8f1d68229",
         "name": "",
         "topic": "sensor/data",
         "qos": "2",
@@ -950,17 +1020,16 @@
         "y": 700,
         "wires": [
             [
-                "c8e25e9919d01f55",
-                "e78b86dbbbc99303"
+                "c8bcd0dd49a5e487"
             ]
         ]
     },
     {
-        "id": "c8e25e9919d01f55",
+        "id": "c8bcd0dd49a5e487",
         "type": "function",
-        "z": "4849650de0ff6e7f",
+        "z": "0fa81af8f1d68229",
         "name": "function 8",
-        "func": "// Hent TemporaryAuthToken fra flow-konteksten for autentisering\nvar tempAuthToken = flow.get(\"tempAuthToken\");\nif (!tempAuthToken) {\n    node.error(\"No valid TemporaryAuthToken available\");\n    return null; // Avslutt flyten hvis token mangler\n}\n\n// Bruk den innkommende payloaden fra sensoren som er allerede formatert\nmsg.payload = {\n    \"temperature\": msg.payload.temperature,\n    \"humidity\": msg.payload.humidity,\n    \"gas_resistance\": msg.payload.gas_resistance,\n    \"pressure\": msg.payload.pressure\n};\n\n// Legg til Authorization-headeren for API-forespørselen\nmsg.headers = {\n    \"Content-Type\": \"application/json\",\n    \"Authorization\": \"Bearer \" + tempAuthToken\n};\n\n// Returner meldingen slik at den kan sendes videre til HTTP request-noden\nreturn msg;",
+        "func": "// Hent TemporaryAuthToken fra flow-konteksten for autentisering\nvar tempAuthToken = flow.get(\"tempAuthToken\");\nif (!tempAuthToken) {\n    node.error(\"No valid TemporaryAuthToken available\");\n    return null; // Avslutt flyten hvis token mangler\n}\n\n// Hent sensorverdier fra payload\nvar temperature = msg.payload.temperature;\nvar humidity = msg.payload.humidity;\nvar gasResistance = msg.payload.gas_resistance;\nvar pressure = msg.payload.pressure;\n\n// Hent DeviceId fra flow-kontekst (UUID til devicen)\nvar deviceId = flow.get(\"deviceId\") || \"123e4567-e89b-12d3-a456-426614174000\"; // Eksempel UUID, erstatt med riktig ID\n\n// Sett opp dataene som skal sendes til API-et\nvar dataArray = [];\n\n// Legg til hvert målepunkt som et eget objekt for API-et\nif (temperature !== undefined) {\n    dataArray.push({\n        \"DeviceId\": deviceId,\n        \"Value\": temperature,\n        \"Unit\": \"Celsius\",\n        \"DataType\": \"temperature\",\n        \"CreatedAt\": new Date().toISOString()\n    });\n}\n\nif (humidity !== undefined) {\n    dataArray.push({\n        \"DeviceId\": deviceId,\n        \"Value\": humidity,\n        \"Unit\": \"Percent\",\n        \"DataType\": \"humidity\",\n        \"CreatedAt\": new Date().toISOString()\n    });\n}\n\nif (gasResistance !== undefined) {\n    dataArray.push({\n        \"DeviceId\": deviceId,\n        \"Value\": gasResistance,\n        \"Unit\": \"Ohms\",\n        \"DataType\": \"gas_resistance\",\n        \"CreatedAt\": new Date().toISOString()\n    });\n}\n\nif (pressure !== undefined) {\n    dataArray.push({\n        \"DeviceId\": deviceId,\n        \"Value\": pressure,\n        \"Unit\": \"hPa\",\n        \"DataType\": \"pressure\",\n        \"CreatedAt\": new Date().toISOString()\n    });\n}\n\n// Oppdater payload med dataArray for å sende til API-et\nmsg.payload = dataArray;\n\n// Legg til Authorization-header for API-forespørselen\nmsg.headers = {\n    \"Content-Type\": \"application/json\",\n    \"Authorization\": \"Bearer \" + tempAuthToken\n};\n\n// Returner meldingen slik at den kan sendes videre til HTTP request-noden\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -971,53 +1040,19 @@
         "y": 700,
         "wires": [
             [
-                "54cf4765475d1f41",
-                "12ce3c46ffc856e3"
+                "3ece131b5e58d3db"
             ]
         ]
     },
     {
-        "id": "54cf4765475d1f41",
-        "type": "debug",
-        "z": "4849650de0ff6e7f",
-        "name": "debug 17",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 480,
-        "y": 780,
-        "wires": []
-    },
-    {
-        "id": "e78b86dbbbc99303",
-        "type": "debug",
-        "z": "4849650de0ff6e7f",
-        "name": "debug 18",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 260,
-        "y": 780,
-        "wires": []
-    },
-    {
-        "id": "12ce3c46ffc856e3",
+        "id": "3ece131b5e58d3db",
         "type": "http request",
-        "z": "4849650de0ff6e7f",
+        "z": "0fa81af8f1d68229",
         "name": "",
-        "method": "GET",
+        "method": "POST",
         "ret": "txt",
         "paytoqs": "ignore",
-        "url": "",
+        "url": "https://localhost:7142/api/Authentication/hub-user-auth",
         "tls": "",
         "persist": false,
         "proxy": "",
@@ -1029,14 +1064,14 @@
         "y": 700,
         "wires": [
             [
-                "f9b5881ce5909d2f"
+                "5162a556aceec59e"
             ]
         ]
     },
     {
-        "id": "f9b5881ce5909d2f",
+        "id": "5162a556aceec59e",
         "type": "switch",
-        "z": "4849650de0ff6e7f",
+        "z": "0fa81af8f1d68229",
         "name": "API Response check",
         "property": "statusCode",
         "propertyType": "msg",
@@ -1060,32 +1095,39 @@
                 "t": "eq",
                 "v": "500",
                 "vt": "num"
+            },
+            {
+                "t": "else"
             }
         ],
         "checkall": "true",
         "repair": false,
-        "outputs": 4,
+        "outputs": 5,
         "x": 800,
         "y": 700,
         "wires": [
             [
-                "03bc6e8d284a184e"
+                "f47f67c0be4cf3e4",
+                "485e5d9a0382ced3"
             ],
             [
-                "139f47e81b46c383"
+                "8cf62b8951755ade"
             ],
             [
-                "139f47e81b46c383"
+                "8cf62b8951755ade"
             ],
             [
-                "139f47e81b46c383"
+                "8cf62b8951755ade"
+            ],
+            [
+                "8cf62b8951755ade"
             ]
         ]
     },
     {
-        "id": "34304b66f99ee28d",
+        "id": "b91761d459518ba3",
         "type": "inject",
-        "z": "4849650de0ff6e7f",
+        "z": "0fa81af8f1d68229",
         "name": "",
         "props": [
             {
@@ -1103,14 +1145,14 @@
         "y": 60,
         "wires": [
             [
-                "05cf5b1fd81169f2"
+                "e4f6f1374c0fd95f"
             ]
         ]
     },
     {
-        "id": "05cf5b1fd81169f2",
+        "id": "e4f6f1374c0fd95f",
         "type": "mqtt out",
-        "z": "4849650de0ff6e7f",
+        "z": "0fa81af8f1d68229",
         "name": "",
         "topic": "sensor/data",
         "qos": "",
@@ -1126,9 +1168,9 @@
         "wires": []
     },
     {
-        "id": "7f6cfd88b87baf76",
+        "id": "7a1c494cf15dd2b3",
         "type": "comment",
-        "z": "4849650de0ff6e7f",
+        "z": "0fa81af8f1d68229",
         "name": "<- for testing ",
         "info": "",
         "x": 1070,
@@ -1136,45 +1178,9 @@
         "wires": []
     },
     {
-        "id": "139f47e81b46c383",
-        "type": "function",
-        "z": "4849650de0ff6e7f",
-        "name": "Lagre filer lokalt",
-        "func": " // Lag en JSON-struktur for sensordataene med tidsstempel\nvar sensorData = {\n    \"timestamp\": new Date().toISOString(),\n    \"temperature\": msg.payload.temperature,\n    \"humidity\": msg.payload.humidity,\n    \"gas_resistance\": msg.payload.gas_resistance,\n    \"pressure\": msg.payload.pressure\n};\n\n// Oppdater payload for å sende til file out-noden\nmsg.payload = JSON.stringify(sensorData) + \"\\n\"; // Legger til newline for enklere lesing.  og dette er hvordan jeg injecter data: {\"temperature\":25.5,\"humidity\":45.2,\"gas_resistance\":1000,\"pressure\":1012.3}\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1060,
-        "y": 760,
-        "wires": [
-            [
-                "5d4d74233189ad08"
-            ]
-        ]
-    },
-    {
-        "id": "6aa969398913660f",
-        "type": "debug",
-        "z": "4849650de0ff6e7f",
-        "name": "debug 19",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1320,
-        "y": 760,
-        "wires": []
-    },
-    {
-        "id": "cf04f9252ca0db14",
+        "id": "1c79198cf30207ad",
         "type": "inject",
-        "z": "4849650de0ff6e7f",
+        "z": "0fa81af8f1d68229",
         "name": "",
         "props": [
             {
@@ -1188,18 +1194,18 @@
         "topic": "",
         "payload": "{\"temperature\":25.5,\"humidity\":45.2,\"gas_resistance\":1000,\"pressure\":1012.3}",
         "payloadType": "json",
-        "x": 830,
-        "y": 820,
+        "x": 1010,
+        "y": 780,
         "wires": [
             [
-                "139f47e81b46c383"
+                "8cf62b8951755ade"
             ]
         ]
     },
     {
-        "id": "5d4d74233189ad08",
+        "id": "e5b5d2c4948637d8",
         "type": "file",
-        "z": "4849650de0ff6e7f",
+        "z": "0fa81af8f1d68229",
         "name": "",
         "filename": "E:\\Code\\Node-Red Phoenix\\sensordata.json",
         "filenameType": "str",
@@ -1207,16 +1213,16 @@
         "createDir": true,
         "overwriteFile": "false",
         "encoding": "utf8",
-        "x": 1370,
-        "y": 840,
+        "x": 1430,
+        "y": 720,
         "wires": [
             []
         ]
     },
     {
-        "id": "03bc6e8d284a184e",
+        "id": "f47f67c0be4cf3e4",
         "type": "file in",
-        "z": "4849650de0ff6e7f",
+        "z": "0fa81af8f1d68229",
         "name": "",
         "filename": "E:\\Code\\Node-Red Phoenix\\sensordata.json",
         "filenameType": "str",
@@ -1229,36 +1235,34 @@
         "y": 660,
         "wires": [
             [
-                "6aa969398913660f",
-                "27fcd457b945b770"
+                "5885a25c2c7104fd"
             ]
         ]
     },
     {
-        "id": "27fcd457b945b770",
+        "id": "5885a25c2c7104fd",
         "type": "function",
-        "z": "4849650de0ff6e7f",
+        "z": "0fa81af8f1d68229",
         "name": "function 9",
-        "func": "// Splitt filinnholdet basert på nye linjer\nvar lines = msg.payload.split(\"\\n\");\n\n// Hent auth token fra flow-kontekst\nvar tempAuthToken = flow.get(\"tempAuthToken\");\ntempAuthToken = \"lol\";\n\nif (!tempAuthToken) {\n    node.error(\"No valid TemporaryAuthToken available\");\n    return null; // Avslutt flyten hvis token mangler\n}\n\n// Samle alle sensordata i en liste\nvar data = [];\n\nlines.forEach(function(line) {\n    if (line.trim() !== \"\") {  // Sjekk om linjen ikke er tom\n        try {\n            var sensorData = JSON.parse(line); // Parse linjen som JSON\n            data.push(sensorData); // Legg til sensordata i listen\n        } catch (e) {\n            node.error(\"Error parsing JSON: \" + e);\n        }\n    }\n});\n\n// Send hele listen med sensordata som én melding til API-et\nif (data.length > 0) {\n    var newMsg = RED.util.cloneMessage(msg);\n    newMsg.payload = data;\n\n    // Legg til Authorization-header for API-forespørselen\n    newMsg.headers = {\n        \"Content-Type\": \"application/json\",\n        \"Authorization\": \"Bearer \" + tempAuthToken\n    };\n\n    // Send hele datapakken videre som en melding\n    return newMsg;\n} else {\n    node.warn(\"No valid data found to send.\");\n    return null; // Avslutt flyten hvis ingen gyldige data er funnet\n}\n",
+        "func": "// Hent auth token fra flow-kontekst\nvar tempAuthToken = flow.get(\"tempAuthToken\");\n\nif (!tempAuthToken) {\n    node.error(\"No valid TemporaryAuthToken available\");\n    return null; // Avslutt flyten hvis token mangler\n}\n\n// Forsøk å parse hele filinnholdet som en JSON-array\nvar data = [];\ntry {\n    data = JSON.parse(msg.payload); // Anta at payload nå er en JSON-array\n    if (!Array.isArray(data)) {\n        node.error(\"Expected a JSON array, but got something else.\");\n        return null; // Avslutt flyten hvis innholdet ikke er en array\n    }\n} catch (e) {\n    node.error(\"Error parsing JSON: \" + e);\n    return null; // Avslutt flyten hvis parsing mislykkes\n}\n\n// Send hele listen med sensordata som én melding til API-et\nif (data.length > 0) {\n    var newMsg = RED.util.cloneMessage(msg);\n    newMsg.payload = data;\n\n    // Legg til Authorization-header for API-forespørselen\n    newMsg.headers = {\n        \"Content-Type\": \"application/json\",\n        \"Authorization\": \"Bearer \" + tempAuthToken\n    };\n\n    // Send hele datapakken videre som en melding\n    return newMsg;\n} else {\n    node.warn(\"No valid data found to send.\");\n    return null; // Avslutt flyten hvis ingen gyldige data er funnet\n}\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1420,
+        "x": 1400,
         "y": 660,
         "wires": [
             [
-                "06b60b84b7c4d2ab",
-                "dbb42e7f70d02179"
+                "ce5d412abe8083c6"
             ]
         ]
     },
     {
-        "id": "06b60b84b7c4d2ab",
+        "id": "ce5d412abe8083c6",
         "type": "http request",
-        "z": "4849650de0ff6e7f",
+        "z": "0fa81af8f1d68229",
         "name": "",
         "method": "POST",
         "ret": "txt",
@@ -1271,18 +1275,18 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1630,
+        "x": 1570,
         "y": 660,
         "wires": [
             [
-                "b016178098a017f4"
+                "b6d0c716810ab161"
             ]
         ]
     },
     {
-        "id": "b016178098a017f4",
+        "id": "b6d0c716810ab161",
         "type": "switch",
-        "z": "4849650de0ff6e7f",
+        "z": "0fa81af8f1d68229",
         "name": "",
         "property": "statusCode",
         "propertyType": "msg",
@@ -1291,27 +1295,23 @@
                 "t": "eq",
                 "v": "200",
                 "vt": "num"
-            },
-            {
-                "t": "else"
             }
         ],
         "checkall": "true",
         "repair": false,
-        "outputs": 2,
-        "x": 1790,
+        "outputs": 1,
+        "x": 1730,
         "y": 660,
         "wires": [
             [
-                "8b4063348dec1959"
-            ],
-            []
+                "3db70a2398934698"
+            ]
         ]
     },
     {
-        "id": "aca6fd0ff2ad842e",
+        "id": "d9e1b2c2d299ed25",
         "type": "comment",
-        "z": "4849650de0ff6e7f",
+        "z": "0fa81af8f1d68229",
         "name": "Sende data med auth",
         "info": "",
         "x": 340,
@@ -1319,29 +1319,29 @@
         "wires": []
     },
     {
-        "id": "3e5e05238046dc18",
+        "id": "4f80235bd0d89aa9",
         "type": "comment",
-        "z": "4849650de0ff6e7f",
+        "z": "0fa81af8f1d68229",
         "name": "Sjekker responds",
         "info": "",
-        "x": 780,
-        "y": 620,
+        "x": 720,
+        "y": 600,
         "wires": []
     },
     {
-        "id": "787c1338264640a6",
+        "id": "916d068da4eba462",
         "type": "comment",
-        "z": "4849650de0ff6e7f",
+        "z": "0fa81af8f1d68229",
         "name": "Ved feil lagrer data lokalt",
         "info": "",
-        "x": 1050,
-        "y": 840,
+        "x": 1090,
+        "y": 820,
         "wires": []
     },
     {
-        "id": "cfb87bcb8ed21a59",
+        "id": "ea263a0d95f14447",
         "type": "comment",
-        "z": "4849650de0ff6e7f",
+        "z": "0fa81af8f1d68229",
         "name": "Ved konnect er data sendt og vi sjekker om vi har data lagret lokalt. sender dette med function9",
         "info": "",
         "x": 1180,
@@ -1349,19 +1349,19 @@
         "wires": []
     },
     {
-        "id": "a549f1dcfd3a3043",
+        "id": "aff7a4fe1a0a59dc",
         "type": "comment",
-        "z": "4849650de0ff6e7f",
+        "z": "0fa81af8f1d68229",
         "name": "Sjekker responds igjen og hvis den er sendt sletter vi filen lokalt",
         "info": "",
-        "x": 1890,
-        "y": 720,
+        "x": 1870,
+        "y": 740,
         "wires": []
     },
     {
-        "id": "f451c7f278c3728c",
+        "id": "2965fb70e658fa35",
         "type": "comment",
-        "z": "4849650de0ff6e7f",
+        "z": "0fa81af8f1d68229",
         "name": "skal få svar med temp auth token + userID",
         "info": "",
         "x": 1120,
@@ -1369,9 +1369,9 @@
         "wires": []
     },
     {
-        "id": "27f342e748a72984",
+        "id": "0781beb677a3d325",
         "type": "function",
-        "z": "4849650de0ff6e7f",
+        "z": "0fa81af8f1d68229",
         "name": "function 11",
         "func": "msg.payload = \"API connected og authenticated\";\nreturn msg;",
         "outputs": 1,
@@ -1380,18 +1380,18 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1490,
-        "y": 260,
+        "x": 1470,
+        "y": 240,
         "wires": [
             [
-                "563ebc1566277ddd"
+                "bd4a9eeba1014583"
             ]
         ]
     },
     {
-        "id": "6b63a1427eb67923",
+        "id": "1de153c3e9529653",
         "type": "comment",
-        "z": "4849650de0ff6e7f",
+        "z": "0fa81af8f1d68229",
         "name": "sjekker svar og sender til app",
         "info": "",
         "x": 1560,
@@ -1399,9 +1399,9 @@
         "wires": []
     },
     {
-        "id": "e0fdb2caa7f4c2fe",
+        "id": "5a3e1caab6d5895a",
         "type": "mqtt in",
-        "z": "4849650de0ff6e7f",
+        "z": "0fa81af8f1d68229",
         "name": "",
         "topic": "app/HistoryRequest",
         "qos": "2",
@@ -1412,17 +1412,18 @@
         "rh": 0,
         "inputs": 0,
         "x": 130,
-        "y": 1140,
+        "y": 1040,
         "wires": [
             [
-                "6a05c980b75849cc"
+                "be914fc760afa97a",
+                "920c9fefd84d6048"
             ]
         ]
     },
     {
-        "id": "6a05c980b75849cc",
+        "id": "be914fc760afa97a",
         "type": "function",
-        "z": "4849650de0ff6e7f",
+        "z": "0fa81af8f1d68229",
         "name": "function 12",
         "func": "// Hent TemporaryAuthToken fra flow-konteksten\nvar tempAuthToken = flow.get(\"tempAuthToken\");\n\nif (!tempAuthToken) {\n    node.error(\"No valid TemporaryAuthToken available\");\n    return null; // Avslutt flyten hvis token mangler\n}\n\n// Sett opp payload og headers for API-forespørselen\nmsg.headers = {\n    \"Content-Type\": \"application/json\",\n    \"Authorization\": \"Bearer \" + tempAuthToken\n};\n\n// Bruker msg.payload til å definere spørringen (valgfritt)\nmsg.payload = {\n    \"query\": \"simple_query_for_data\" // Kan tilpasses med f.eks. tidsramme eller sensor-id\n};\n\n// Angi API URL for å hente historikk\nmsg.url = \"http://api.yourserver.com/sensor/history\"; // Bytt til riktig API-endepunkt\n\nreturn msg;",
         "outputs": 1,
@@ -1432,17 +1433,17 @@
         "finalize": "",
         "libs": [],
         "x": 350,
-        "y": 1140,
+        "y": 1040,
         "wires": [
             [
-                "aeea556ecd0a49b4"
+                "ae7f0ff47fc329d2"
             ]
         ]
     },
     {
-        "id": "143f197919d42037",
+        "id": "d166f36d897fe2e5",
         "type": "switch",
-        "z": "4849650de0ff6e7f",
+        "z": "0fa81af8f1d68229",
         "name": "API Response check",
         "property": "statusCode",
         "propertyType": "msg",
@@ -1472,50 +1473,52 @@
         "repair": false,
         "outputs": 4,
         "x": 780,
-        "y": 1140,
+        "y": 1040,
         "wires": [
             [
-                "4fa12816884755d1"
+                "572d7d0f3c3fdbbe"
             ],
             [
-                "010a33034941d4c8"
+                "abb946281b94774a"
             ],
             [
-                "010a33034941d4c8"
+                "abb946281b94774a"
             ],
             [
-                "010a33034941d4c8"
+                "abb946281b94774a"
             ]
         ]
     },
     {
-        "id": "aeea556ecd0a49b4",
+        "id": "ae7f0ff47fc329d2",
         "type": "http request",
-        "z": "4849650de0ff6e7f",
+        "z": "0fa81af8f1d68229",
         "name": "",
         "method": "GET",
         "ret": "txt",
-        "paytoqs": false,
+        "paytoqs": "ignore",
         "url": "",
+        "tls": "",
         "persist": false,
+        "proxy": "",
         "insecureHTTPParser": false,
         "authType": "",
         "senderr": false,
         "headers": [],
         "x": 550,
-        "y": 1140,
+        "y": 1040,
         "wires": [
             [
-                "143f197919d42037"
+                "d166f36d897fe2e5"
             ]
         ]
     },
     {
-        "id": "4fa12816884755d1",
+        "id": "572d7d0f3c3fdbbe",
         "type": "function",
-        "z": "4849650de0ff6e7f",
+        "z": "0fa81af8f1d68229",
         "name": "function 13",
-        "func": "// Dataene som returneres fra API-et lagres i msg.payload\nvar responseData = msg.payload; // Forvent at API-et returnerer JSON med historiske data\n\n// Sett opp respons for å sende til appen\nmsg.topic = \"app/HistoryResponse\"; // MQTT-emnet som appen lytter på for historikkdata\nmsg.payload = responseData;\n\nreturn msg;",
+        "func": "var response = msg.payload;\n\n// Hvis response er et enkelt objekt, pakk det inn i en liste for å kunne bruke map()\nif (!Array.isArray(response)) {\n    response = [response];\n}\n\nvar formattedData = response.map(function(record) {\n    return {\n        timestamp: record.CreatedAt,\n        deviceId: record.DeviceId,\n        dataType: record.DataType,\n        value: record.Value,\n        unit: record.Unit\n    };\n});\n\nmsg.payload = formattedData;  // Oppdater payload med den formaterte dataen\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -1523,17 +1526,18 @@
         "finalize": "",
         "libs": [],
         "x": 1030,
-        "y": 1120,
+        "y": 1020,
         "wires": [
             [
-                "43e5d16b4b203cc2"
+                "00308c6efbcf70b3",
+                "345cca50451e7530"
             ]
         ]
     },
     {
-        "id": "43e5d16b4b203cc2",
+        "id": "00308c6efbcf70b3",
         "type": "mqtt out",
-        "z": "4849650de0ff6e7f",
+        "z": "0fa81af8f1d68229",
         "name": "",
         "topic": "app/HistoryResponse",
         "qos": "",
@@ -1544,14 +1548,14 @@
         "correl": "",
         "expiry": "",
         "broker": "ffaf32d3b2905d76",
-        "x": 1260,
-        "y": 1120,
+        "x": 1320,
+        "y": 1000,
         "wires": []
     },
     {
-        "id": "010a33034941d4c8",
+        "id": "abb946281b94774a",
         "type": "function",
-        "z": "4849650de0ff6e7f",
+        "z": "0fa81af8f1d68229",
         "name": "function 14",
         "func": "msg.payload = \"API Failed to respond\";\nreturn msg;",
         "outputs": 1,
@@ -1561,17 +1565,17 @@
         "finalize": "",
         "libs": [],
         "x": 1030,
-        "y": 1180,
+        "y": 1060,
         "wires": [
             [
-                "caa69c72d1a357ec"
+                "5a78a1cd0c1ea66a"
             ]
         ]
     },
     {
-        "id": "caa69c72d1a357ec",
+        "id": "5a78a1cd0c1ea66a",
         "type": "mqtt out",
-        "z": "4849650de0ff6e7f",
+        "z": "0fa81af8f1d68229",
         "name": "",
         "topic": "app/HistoryResponse",
         "qos": "",
@@ -1582,31 +1586,14 @@
         "correl": "",
         "expiry": "",
         "broker": "ffaf32d3b2905d76",
-        "x": 1260,
-        "y": 1180,
+        "x": 1280,
+        "y": 1080,
         "wires": []
     },
     {
-        "id": "dbb42e7f70d02179",
-        "type": "debug",
-        "z": "4849650de0ff6e7f",
-        "name": "debug 20",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1560,
-        "y": 740,
-        "wires": []
-    },
-    {
-        "id": "c5b990fa2ee0d70c",
+        "id": "66cb8dda5156efad",
         "type": "inject",
-        "z": "4849650de0ff6e7f",
+        "z": "0fa81af8f1d68229",
         "name": "",
         "props": [],
         "repeat": "",
@@ -1614,18 +1601,18 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 970,
-        "y": 600,
+        "x": 850,
+        "y": 640,
         "wires": [
             [
-                "03bc6e8d284a184e"
+                "f47f67c0be4cf3e4"
             ]
         ]
     },
     {
-        "id": "8b4063348dec1959",
+        "id": "3db70a2398934698",
         "type": "exec",
-        "z": "4849650de0ff6e7f",
+        "z": "0fa81af8f1d68229",
         "command": "del E:\\Code\\Node-Red Phoenix\\sensordata.json",
         "addpay": "",
         "append": "",
@@ -1634,8 +1621,8 @@
         "winHide": false,
         "oldrc": false,
         "name": "",
-        "x": 2100,
-        "y": 640,
+        "x": 2000,
+        "y": 660,
         "wires": [
             [],
             [],
@@ -1643,9 +1630,9 @@
         ]
     },
     {
-        "id": "fd24e4f039a52189",
+        "id": "35137adb3950605b",
         "type": "comment",
-        "z": "4849650de0ff6e7f",
+        "z": "0fa81af8f1d68229",
         "name": "Sletter filen for lagring av data. Må samsvare med de andre lagringene",
         "info": "",
         "x": 1910,
@@ -1653,35 +1640,173 @@
         "wires": []
     },
     {
-        "id": "9320198b83e78ebc",
+        "id": "3359d605397d2768",
         "type": "comment",
-        "z": "4849650de0ff6e7f",
+        "z": "0fa81af8f1d68229",
         "name": "Spørring til Database:",
         "info": "",
         "x": 340,
-        "y": 1080,
+        "y": 960,
         "wires": []
     },
     {
-        "id": "551e460f9ef43dad",
+        "id": "122b2bb3f8e36c61",
         "type": "comment",
-        "z": "4849650de0ff6e7f",
+        "z": "0fa81af8f1d68229",
         "name": "Svar som må bli omgjort til noe appen kan bruke",
         "info": "",
-        "x": 1060,
-        "y": 1060,
+        "x": 1020,
+        "y": 920,
         "wires": []
     },
     {
-        "id": "6d07d8fed49d4df0",
+        "id": "8cf62b8951755ade",
+        "type": "function",
+        "z": "0fa81af8f1d68229",
+        "name": "function 15",
+        "func": "// Her kan du sette UUID for DeviceId, dette bør være unikt for hvert sensor-device.\nvar deviceId = flow.get(\"deviceId\") || \"123e4567-e89b-12d3-a456-426614174000\"; // Hentet fra flow kontekst eller hardkodet\n\n// Sett opp en array for å holde transformerte data\nvar dataArray = [];\n\n// Transformere hver av de innkommende verdiene til API-formatet\nvar dataTypes = [\n  { name: \"temperature\", unit: \"Celsius\", dataType: \"numeric\" },\n  { name: \"humidity\", unit: \"Percent\", dataType: \"numeric\" },\n  { name: \"gas_resistance\", unit: \"Ohms\", dataType: \"numeric\" },\n  { name: \"pressure\", unit: \"hPa\", dataType: \"numeric\" }\n];\n\ndataTypes.forEach(function(item) {\n  if (msg.payload[item.name] !== undefined) {\n    dataArray.push({\n      \"DeviceId\": deviceId,\n      \"Value\": msg.payload[item.name],\n      \"Unit\": item.unit,\n      \"DataType\": item.dataType,\n      \"CreatedAt\": new Date().toISOString()\n    });\n  }\n});\n\n// Oppdatere payload med det nye formatet (hvis API-et forventer batch, sender vi hele dataArray)\nmsg.payload = dataArray;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1130,
+        "y": 720,
+        "wires": [
+            [
+                "e5b5d2c4948637d8"
+            ]
+        ]
+    },
+    {
+        "id": "485e5d9a0382ced3",
+        "type": "debug",
+        "z": "0fa81af8f1d68229",
+        "name": "debug 26",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1000,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "7159b429c9803e3f",
+        "type": "debug",
+        "z": "0fa81af8f1d68229",
+        "name": "debug 27",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 270,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "920c9fefd84d6048",
+        "type": "debug",
+        "z": "0fa81af8f1d68229",
+        "name": "debug 28",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 360,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "8a8d0ef654160fd0",
+        "type": "inject",
+        "z": "0fa81af8f1d68229",
+        "name": "Test data for test",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[   {     \"CreatedAt\": \"2024-11-15T14:30:00Z\",     \"DeviceId\": \"123e4567-e89b-12d3-a456-426614174000\",     \"DataType\": \"temperature\",     \"Value\": 22.5,     \"Unit\": \"Celsius\"   },   {     \"CreatedAt\": \"2024-11-15T15:00:00Z\",     \"DeviceId\": \"123e4567-e89b-12d3-a456-426614174000\",     \"DataType\": \"humidity\",     \"Value\": 55,     \"Unit\": \"Percent\"   },   {     \"CreatedAt\": \"2024-11-15T15:15:00Z\",     \"DeviceId\": \"123e4567-e89b-12d3-a456-426614174000\",     \"DataType\": \"pressure\",     \"Value\": 1013,     \"Unit\": \"hPa\"   },   {     \"CreatedAt\": \"2024-11-15T15:30:00Z\",     \"DeviceId\": \"123e4567-e89b-12d3-a456-426614174001\",     \"DataType\": \"gas_resistance\",     \"Value\": 220,     \"Unit\": \"Ohms\"   } ]",
+        "payloadType": "json",
+        "x": 840,
+        "y": 960,
+        "wires": [
+            [
+                "572d7d0f3c3fdbbe"
+            ]
+        ]
+    },
+    {
+        "id": "345cca50451e7530",
+        "type": "debug",
+        "z": "0fa81af8f1d68229",
+        "name": "debug 29",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1100,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "d06de70fd1fedd24",
+        "type": "inject",
+        "z": "0fa81af8f1d68229",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 900,
+        "y": 1160,
+        "wires": [
+            [
+                "abb946281b94774a"
+            ]
+        ]
+    },
+    {
+        "id": "c8d79812517c4a4f",
         "type": "http request",
-        "z": "48444936cd495fbf",
+        "z": "e421cbd625b1e3bc",
         "name": "",
         "method": "GET",
         "ret": "obj",
         "paytoqs": "query",
         "url": "https://localhost:7142/api/Authentication/hub-credentials",
-        "tls": "29cf605083afc9f5",
+        "tls": "3d52208e47fbe976",
         "persist": false,
         "proxy": "",
         "insecureHTTPParser": false,
@@ -1692,15 +1817,15 @@
         "y": 260,
         "wires": [
             [
-                "28210a1edacaa116",
-                "798280e06d309126"
+                "e0fc12510ec5284d",
+                "1305335659c26322"
             ]
         ]
     },
     {
-        "id": "1b8be4850dde298c",
+        "id": "b9586633354e7241",
         "type": "inject",
-        "z": "48444936cd495fbf",
+        "z": "e421cbd625b1e3bc",
         "name": "Inject hubId",
         "props": [
             {
@@ -1718,14 +1843,14 @@
         "y": 260,
         "wires": [
             [
-                "6d07d8fed49d4df0"
+                "c8d79812517c4a4f"
             ]
         ]
     },
     {
-        "id": "28210a1edacaa116",
+        "id": "e0fc12510ec5284d",
         "type": "debug",
-        "z": "48444936cd495fbf",
+        "z": "e421cbd625b1e3bc",
         "name": "debug 21",
         "active": true,
         "tosidebar": true,
@@ -1739,34 +1864,34 @@
         "wires": []
     },
     {
-        "id": "47b5be8c20564a5c",
+        "id": "abe935558d0f74c2",
         "type": "comment",
-        "z": "48444936cd495fbf",
+        "z": "e421cbd625b1e3bc",
         "name": "Setup!",
         "info": "On setup!\ngets clientid and secret, needs to be stored!",
-        "x": 310,
+        "x": 430,
         "y": 200,
         "wires": []
     },
     {
-        "id": "7fd8c1cb10b812c5",
+        "id": "97bb56aeb1fa8a78",
         "type": "catch",
-        "z": "48444936cd495fbf",
+        "z": "e421cbd625b1e3bc",
         "name": "",
         "scope": [
-            "6d07d8fed49d4df0"
+            "c8d79812517c4a4f"
         ],
         "uncaught": false,
-        "x": 1390,
-        "y": 1060,
+        "x": 1070,
+        "y": 700,
         "wires": [
             []
         ]
     },
     {
-        "id": "798280e06d309126",
+        "id": "1305335659c26322",
         "type": "function",
-        "z": "48444936cd495fbf",
+        "z": "e421cbd625b1e3bc",
         "name": "Store ClientId & Secret",
         "func": "var clientId = msg.payload.clientId;\nvar clientSecret = msg.payload.clientSecret;\n\nglobal.set(\"ClientId\", clientId);\nglobal.set(\"ClientSecret\", clientSecret);\n\n\nvar message = clientId + \" \" + clientSecret;\n\nmsg.payload = message;\n\nreturn msg;",
         "outputs": 1,
@@ -1779,14 +1904,14 @@
         "y": 260,
         "wires": [
             [
-                "80aa8dfb6493cd8b"
+                "cc4a814da6d89d86"
             ]
         ]
     },
     {
-        "id": "0f6b0f517de8724a",
+        "id": "fb32fe0429ff76e3",
         "type": "inject",
-        "z": "48444936cd495fbf",
+        "z": "e421cbd625b1e3bc",
         "name": "Inject clientId & Secret",
         "props": [
             {
@@ -1804,30 +1929,30 @@
         "y": 580,
         "wires": [
             [
-                "c7a6fd0c1cd92728"
+                "023816b5addd47c9"
             ]
         ]
     },
     {
-        "id": "a7312cf8d4abbac3",
+        "id": "962d1847d982e886",
         "type": "comment",
-        "z": "48444936cd495fbf",
+        "z": "e421cbd625b1e3bc",
         "name": "Auth Login!",
         "info": "",
-        "x": 310,
-        "y": 520,
+        "x": 390,
+        "y": 500,
         "wires": []
     },
     {
-        "id": "c7a6fd0c1cd92728",
+        "id": "023816b5addd47c9",
         "type": "http request",
-        "z": "48444936cd495fbf",
+        "z": "e421cbd625b1e3bc",
         "name": "",
         "method": "POST",
         "ret": "txt",
         "paytoqs": "ignore",
         "url": "https://localhost:7142/api/Authentication/login?isHub=true",
-        "tls": "29cf605083afc9f5",
+        "tls": "3d52208e47fbe976",
         "persist": false,
         "proxy": "",
         "insecureHTTPParser": false,
@@ -1838,15 +1963,15 @@
         "y": 580,
         "wires": [
             [
-                "d8991dd675026b1c",
-                "b27abdad800ed9ca"
+                "b6338eba3b35bd96",
+                "b220b7376ec8d378"
             ]
         ]
     },
     {
-        "id": "d8991dd675026b1c",
+        "id": "b6338eba3b35bd96",
         "type": "debug",
-        "z": "48444936cd495fbf",
+        "z": "e421cbd625b1e3bc",
         "name": "debug 22",
         "active": true,
         "tosidebar": true,
@@ -1861,9 +1986,9 @@
         "wires": []
     },
     {
-        "id": "b27abdad800ed9ca",
+        "id": "b220b7376ec8d378",
         "type": "function",
-        "z": "48444936cd495fbf",
+        "z": "e421cbd625b1e3bc",
         "name": "Collect accessToken And store",
         "func": "\nreturn msg;",
         "outputs": 1,
@@ -1876,14 +2001,14 @@
         "y": 580,
         "wires": [
             [
-                "62e5f5be44713c4f"
+                "0ae895599c3772ef"
             ]
         ]
     },
     {
-        "id": "a52badb8df5b99e3",
+        "id": "e8519605d6b67fc6",
         "type": "function",
-        "z": "48444936cd495fbf",
+        "z": "e421cbd625b1e3bc",
         "name": "Get ClientId and Secret from file",
         "func": "var client = {\n    \"clientId\": global.get(\"ClientId\"),\n    \"clientSecret\": global.get(\"ClientSecret\")\n};\n\n\n\nmsg.payload = client;\n\nreturn msg;",
         "outputs": 1,
@@ -1896,15 +2021,15 @@
         "y": 740,
         "wires": [
             [
-                "c7a6fd0c1cd92728",
-                "201a1bcd3fd576e7"
+                "023816b5addd47c9",
+                "2ab47b5a11f36e05"
             ]
         ]
     },
     {
-        "id": "e7a3d87b526bc20b",
+        "id": "2925e5a310867120",
         "type": "inject",
-        "z": "48444936cd495fbf",
+        "z": "e421cbd625b1e3bc",
         "name": "",
         "props": [],
         "repeat": "",
@@ -1916,14 +2041,14 @@
         "y": 160,
         "wires": [
             [
-                "4a053535b740837d"
+                "a23bf65a160161d0"
             ]
         ]
     },
     {
-        "id": "57dadce0d5a6d578",
+        "id": "eb323feb3e62c3d7",
         "type": "debug",
-        "z": "48444936cd495fbf",
+        "z": "e421cbd625b1e3bc",
         "name": "debug 23",
         "active": true,
         "tosidebar": true,
@@ -1938,41 +2063,39 @@
         "wires": []
     },
     {
-        "id": "33e867561d19aa55",
+        "id": "ae6fd0a08de1b18a",
         "type": "link in",
-        "z": "48444936cd495fbf",
+        "z": "e421cbd625b1e3bc",
         "name": "Auth Login",
         "links": [],
         "x": 65,
         "y": 740,
         "wires": [
             [
-                "a52badb8df5b99e3"
+                "e8519605d6b67fc6"
             ]
         ]
     },
     {
-        "id": "4a053535b740837d",
+        "id": "a23bf65a160161d0",
         "type": "link call",
-        "z": "48444936cd495fbf",
+        "z": "e421cbd625b1e3bc",
         "name": "Test",
-        "links": [
-            "33e867561d19aa55"
-        ],
+        "links": [],
         "linkType": "static",
         "timeout": "30",
         "x": 1370,
         "y": 180,
         "wires": [
             [
-                "57dadce0d5a6d578"
+                "eb323feb3e62c3d7"
             ]
         ]
     },
     {
-        "id": "62e5f5be44713c4f",
+        "id": "0ae895599c3772ef",
         "type": "link out",
-        "z": "48444936cd495fbf",
+        "z": "e421cbd625b1e3bc",
         "name": "auth Login",
         "mode": "return",
         "links": [],
@@ -1981,9 +2104,9 @@
         "wires": []
     },
     {
-        "id": "201a1bcd3fd576e7",
+        "id": "2ab47b5a11f36e05",
         "type": "debug",
-        "z": "48444936cd495fbf",
+        "z": "e421cbd625b1e3bc",
         "name": "debug 24",
         "active": true,
         "tosidebar": true,
@@ -1998,9 +2121,9 @@
         "wires": []
     },
     {
-        "id": "80aa8dfb6493cd8b",
+        "id": "cc4a814da6d89d86",
         "type": "debug",
-        "z": "48444936cd495fbf",
+        "z": "e421cbd625b1e3bc",
         "name": "debug 25",
         "active": true,
         "tosidebar": true,
@@ -2014,9 +2137,9 @@
         "wires": []
     },
     {
-        "id": "f60ab83a0981254e",
+        "id": "459c36f59cd5fc80",
         "type": "comment",
-        "z": "48444936cd495fbf",
+        "z": "e421cbd625b1e3bc",
         "name": "Example usage to login",
         "info": "",
         "x": 1380,
