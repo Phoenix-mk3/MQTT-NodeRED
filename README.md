@@ -29,6 +29,7 @@ Her skal vi se nærmere på hvordan vi setter opp MQTT og Node-Red
 ## Getting Started
 
 Man trenger å laste ned Node-Red [Installasjonsveiledning](https://nodered.org/docs/getting-started/local)
+
 Også trenger man å laste ned mosquitto [Installasjonsveiledning](https://mosquitto.org/download/)
 
 
@@ -36,7 +37,7 @@ Også trenger man å laste ned mosquitto [Installasjonsveiledning](https://mosqu
 ### Installasjon
 
 1. Installere mosquitto config filen
-   [a Mosquitto Config](https://github.com/Phoenix-mk3/MQTT-NodeRED/blob/main/mosquitto/mosquitto.conf)
+   [Mosquitto_Config](https://github.com/Phoenix-mk3/MQTT-NodeRED/blob/main/mosquitto/mosquitto.conf)
 
 2. Overskriv den lokale mosquitto config fila.
      Som regel ligger denne her: C:\Program Files\mosquitto\mosquitto.conf
@@ -55,10 +56,13 @@ Også trenger man å laste ned mosquitto [Installasjonsveiledning](https://mosqu
 <img width="725" alt="image" src="https://github.com/user-attachments/assets/6fdbdd71-c5ee-4fce-9932-cee32768deb3">
 
 6. Last ned og importer vår Node-Red flow
-   [a Flow](https://github.com/Phoenix-mk3/MQTT-NodeRED/blob/main/flows.json)
+   [Flow](https://github.com/Phoenix-mk3/MQTT-NodeRED/blob/main/flows.json)
    I Node-Red, trykk på i høyret hjørnet
+   
    <img width="373" alt="image" src="https://github.com/user-attachments/assets/20dedf05-b414-4bce-bf94-e47370f35062">
-   Import
+   
+   Trykk import
+   
    Så kan man enten lime inn hele json fila eller opplaste den om man har lasted den ned lokalt på maskina.
 
    
